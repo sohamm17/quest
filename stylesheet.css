@@ -1,21 +1,72 @@
 body {
-      margin-top: 1.0em;
-      background-color: #82bfd8;
-      font-family: "Helvetica,Arial,FreeSans";
-      color: #000000;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    font-family: sans-serif;
 }
-#container {
-      margin: 0 auto;
-      width: 700px;
+
+div.body {
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    padding: 1em;
+    margin: 1em;
 }
-h1 { font-size: 3.8em; color: #7d4027; margin-bottom: 3px; }
-h1 .small { font-size: 0.4em; }
-h1 a { text-decoration: none }
-h2 { font-size: 1.5em; color: #7d4027; }
-h3 { text-align: center; color: #7d4027; }
-a { color: #7d4027; }
-.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-.download { float: right; }
-pre { background: #000; color: #fff; padding: 15px;}
-hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-.footer { text-align:center; padding-top:30px; font-style: italic; }
+
+a {
+    text-decoration: none;
+    color: #8888ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.heading {
+    margin: 0;
+    padding: 0;
+}
+
+div.sections {
+    color: white;
+    padding: 0;
+    margin: 0;
+    max-width: 40em;
+}
+
+div.sections ul.sections {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+div.sections li {
+    padding: 2em 0 0 0;
+    margin: 0;
+}
+
+div.sections span.title {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+div.sections span.title:before {
+    content: "> ";
+}
+
+div.sections p {
+    padding: 0;
+    margin: 1em 0;
+}
+
+ul.features, ul.papers {
+    list-style-type: circle;
+    margin: 1em 0;
+}
+
+ul.features li, ul.papers li {
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}

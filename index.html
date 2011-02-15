@@ -1,36 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <title>Quest operating system project</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
-    <title>The Quest Operating System</title>
   </head>
-
   <body>
-    <div id="container">
-      <div class="description">
-        The Quest Operating System
+    <div class="body">
+      <div class="heading">
+        <img src="quest.png" alt="QUEST"/>
       </div>
+      <div class="sections">
+        <ul class="sections">
+          <li>
+            <span class="title">About</span>
+            <p>
+              Quest is a research operating system designed and
+              implemented at <a href="http://www.cs.bu.edu/">Boston
+              University</a> over the past few years.  The original
+              web page is <a
+              href="http://www.cs.bu.edu/fac/richwest/quest.html">here</a>.
+            </p>
+            <p>
+              The development of Quest has involved several people,
+              including: Matthew Danish, Ye Li, Gary Wong and Richard
+              West.
+            </p>
+            <p>
+              Quest is open source software available under the terms
+              of the GNU General Public License v3.
+            </p>
+          </li>
+          <li>
+            <span class="title">Features</span>
+            <ul class="features">
+              <li>Supports Intel&#xAE; 32-bit x86 architecture in protected mode</li>
+              <li>Software-based preemptive multi-tasking</li>
+              <li>Static priority-based, real-time Virtual CPU scheduler</li>
+              <li>Symmetric multi-processing, up to 8 logical CPUs</li>
+              <li>Boots from HD, CD-ROM, USB or Network (PXE)</li>
+              <li>Simple ATA and ATAPI support with ext2 and iso9660 filesystems</li>
+              <li>USB UHCI support: mass storage, network, serial port, video camera</li>
+              <li>PCI network cards: e1000, pcnet32, realtek 8169</li>
+              <li>TCP/IP networking provided by <a
+              href="http://savannah.nongnu.org/projects/lwip/">lwIP</a></li>
+              <li>Integration with <a
+              href="http://www.acpica.org/">ACPICA</a>, a reference
+              ACPI implementation</li>
+              <li>Sound Blaster 16 driver using DMA</li>
+              <li>Intel&#xAE; hardware virtualization (VMX) support (work-in-progress)</li>
+              <li>Minimal Unix-style system call interface: <tt>fork/exec/open</tt></li>
+            </ul>
+          </li>
+          <li>
+            <span class="title">Download</span>
+            <p>
+              Due to its experimental nature, Quest is only available
+              through a <a href="http://www.git-scm.com">git</a> repository.
+            </p>
+            <p>
+              You can download this project in either
+              <a href="http://github.com/QuestOS/quest/zipball/master">zip</a> or
+              <a href="http://github.com/QuestOS/quest/tarball/master">tar</a> formats.
+            </p>
+            <p>You can also clone the project with <a href="http://git-scm.com">git</a>
+            by running:
+            </p>
+            <blockquote><tt>$ git clone git://github.com/QuestOS/quest</tt></blockquote>
 
-      <h2>License</h2>
-      <p>GNU General Public License</p>
-      <h2>Authors</h2>
-      <p>Matthew Danish<br/>Ye Li<br/>Richard West<br/></p>
-
-      <h2>Download</h2>
-      <p>
-        You can download this project in either
-        <a href="http://github.com/QuestOS/quest/zipball/master">zip</a> or
-        <a href="http://github.com/QuestOS/quest/tarball/master">tar</a> formats.
-      </p>
-      <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      </p>
-      <blockquote><tt>$ git clone git://github.com/QuestOS/quest</tt></blockquote>
-
-      <div class="footer">
-        get the source code on GitHub : <a href="http://github.com/QuestOS/quest">QuestOS/quest</a>
+            <div class="footer">
+              And you can visit the GitHub page directly: <a href="http://github.com/QuestOS/quest">QuestOS/quest</a>
+            </div>
+          </li>
+          <li>
+            <span class="title">Related Publications</span>
+            <ul class="papers">
+            <li>
+              Matthew Danish, Ye Li, and Richard West. Virtual-CPU Scheduling in the Quest Operating System. Tech Rep BUCS-TR-2010-036. To appear In Proceedings of RTAS 2011.
+            </li>
+            <li>
+              Matthew Danish and Hongwei Xi. Operating System Development with ATS. In PLPV 2010: Proceedings of the 4th Workshop on Programming Languages meets Program Verification, 2010.
+            </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-
     </div>
-    
   </body>
 </html>
